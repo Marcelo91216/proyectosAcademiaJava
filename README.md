@@ -1,2 +1,11 @@
 # proyectosAcademiaJava
 Tareas y proyectos para la academia Java MTY 2024
+
+## Semana 1
+- PDF sobre la herramienta de Git y sus comandos
+- PDF sobre el sistema operativo de Linux y sus comandos
+- Código 1 de polimorfismo y clases abstractas
+- Código 2 de Singleton
+- Código 3 de inyección de dependencias
+
+Para entrega el fin de semana 1
