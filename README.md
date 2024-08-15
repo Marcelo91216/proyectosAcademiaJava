@@ -12,7 +12,7 @@ Tareas y proyectos para la academia Java MTY 2024
 
 Para entrega el fin de semana 1
 
-´´´java
+```java
 package xideral.academy.java;
 
 public class Main{
@@ -20,5 +20,5 @@ public class Main{
         System.out.println("Welcome to my repository!!!");
     }
 }
-´´´
+```
 
