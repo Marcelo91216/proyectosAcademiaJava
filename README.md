@@ -1,3 +1,5 @@
+# Marcelo Eduardo Guillen Castillo
+
 # proyectosAcademiaJava
 Tareas y proyectos para la academia Java MTY 2024
 
@@ -9,3 +11,14 @@ Tareas y proyectos para la academia Java MTY 2024
 - Código 3 de inyección de dependencias
 
 Para entrega el fin de semana 1
+
+´´´java
+package xideral.academy.java;
+
+public class Main{
+    public void main(String[] args){
+        System.out.println("Welcome to my repository!!!");
+    }
+}
+´´´
+
