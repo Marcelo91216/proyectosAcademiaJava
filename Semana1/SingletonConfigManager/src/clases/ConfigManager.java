@@ -25,6 +25,6 @@ public class ConfigManager {
     }
     
     public String getDBConfig(){
-        return configDB.toString()+"\nconection "+(this.conectionUp?"ON":"OFF")+"\n~~~~~~~~";
+        return configDB.toString()+"\nconection "+(this.conectionUp?"ON":"OFF")+"\n~ ~ ~ ~ ~ ~ ~ ~";
     }
 }
