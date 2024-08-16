@@ -2,6 +2,7 @@
 
 # proyectosAcademiaJava
 Tareas y proyectos para la academia Java MTY 2024
+## Proyectos realizados en el IDE NetBeans!!
 
 ## Semana 1
 - PDF sobre la herramienta de Git y sus comandos
