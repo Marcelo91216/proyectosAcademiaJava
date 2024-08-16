@@ -2,9 +2,9 @@ package clases;
 
 public class DatabaseConfig {
 
-    public String name;
-    public String lang;
-    public String port;
+    private String name;
+    private String lang;
+    private String port;
 
     public DatabaseConfig() {
         this.name = "Database";
@@ -12,20 +12,23 @@ public class DatabaseConfig {
         this.port = "8080";
     }
 
-    public DatabaseConfig(String name, String lang, String port) {
+    public void setName(String name) {
+        System.out.println("> Nombre de la base de datos cambiado...");
         this.name = name;
+    }
+
+    public void setLang(String lang) {
+        System.out.println("> Lenguaje de programacion para la base de datos cambiado...");
         this.lang = lang;
+    }
+
+    public void setPort(String port) {
+        System.out.println("> Puerto para la base de datos cambiado...");
         this.port = port;
     }
 
-    public void configureDatabase(DatabaseConfig newConfig) {
-        this.name = newConfig.name;
-        this.lang = newConfig.lang;
-        this.port = newConfig.port;
-    }
-    
     @Override
-    public String toString(){
-        return "> Showing database config info...\nname: "+this.name+"\nlanguage: "+this.lang+"\non port: "+this.port;
+    public String toString() {
+        return "> Showing database config info...\nname: " + this.name + "\nlanguage: " + this.lang + "\non port: " + this.port;
     }
 }
