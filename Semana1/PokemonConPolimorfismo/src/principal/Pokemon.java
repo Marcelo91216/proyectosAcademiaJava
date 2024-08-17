@@ -11,6 +11,8 @@ public class Pokemon extends Species {
     private State state;
     private int lvl;
 
+    // Se calculan las estadisticas del pokemon en base a sus DV(Valores Individuales), sus estadisticas base (Unica en cada especie),
+    // su nombre, y su nivel (minimo 1, maximo 100)
     public Pokemon(Stats bs, String name, Stats dv, int lvl) {
         super(bs, name);
         this.dv = dv;
@@ -29,10 +31,12 @@ public class Pokemon extends Species {
         return "~ ~ ~ ~ ~ ~\n> "+this.name+" nivel: "+this.lvl+"\nPuntos de salud: "+this.actualHp+"/"+this.actualstat.hp+(this.state!=State.NULL?"\nSufre de "+this.state:"")+"\n"+this.actualstat+"\n~ ~ ~ ~ ~ ~";
     }
 
+    // Retorna el nivel del pokemon
     public int getLvl() {
         return this.lvl;
     }
 
+    // Retorna los puntos de vida del pokemon
     public int getHp() {
         return this.actualHp;
     }
@@ -52,6 +56,7 @@ public class Pokemon extends Species {
         this.state = state;
     }
 
+    // Retorna el estado del pokemon
     public State getState() {
         return this.state;
     }
@@ -63,7 +68,8 @@ public class Pokemon extends Species {
         System.out.print("El enemigo "+this.name);
         this.moveset[rand.nextInt(this.moveset.length)].print();
     }
-    
+
+    // Retorna el nombre del pokemon
     public String getName(){
         return this.name;
     }
