@@ -11,6 +11,9 @@ public class Main {
         ConfigManager configmanager = ConfigManager.getConfig();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Bienvenido al administrador de configuraciones ConfigManager!!!");
+        // El usuario tiene la posibilidad de modificar las configuraciones de la base de datos
+        // Podrá elegir entre opciones como salir, revisar el estado de la conexion,
+        // o modificar algunas de las configuraciones de la base de datos
         do {
             System.out.println("________\nAcciones que puede realizar\n0 -> salir o terminar, 2 -> checar configuración actual, 3 -> apagar/encender conexión, 4 -> cambiar nombre de la base de datos, 5 -> cambiar el lenguaje de la base de datos, 6 -> cambiar el numero de puerto serie");
             System.out.println("El servicio esta "+(configmanager.isConectionOn()?"activo":"inactivo"));

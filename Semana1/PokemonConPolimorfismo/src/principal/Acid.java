@@ -3,6 +3,7 @@ package principal;
 import java.util.Random;
 
 public class Acid implements Move {
+    // Un ataque ofensivo cuyo efecto secundario es tener una probabilidad del 30% de envenenar al enemigo
     @Override
     public void attack(Pokemon src, Pokemon dst){
         Random random = new Random();

@@ -19,7 +19,11 @@ public class Main {
         assignData();
         battle();
     }
-    
+
+    // Inicia el combate pokemon en el cual el jugador puede decidir entre 4 movimientos
+    // Podrá visualizar las estadisticas de su pokemon asignado
+    // Ademas de visualizar datos de todos los pokemon como sus puntos de vida
+    // o su estado
     public static void battle(){
         System.out.println("La batalla ha empezado!!");
         do{
@@ -62,6 +66,12 @@ public class Main {
         }while(o!=0 && enemy.getHp()>0 && yours.getHp()>0);
     }
     
+    // Asigna los datos base de los Pokemon que ofrece el programa, se pueden
+    // agregar más, con estadísticas y datos variados, depende del
+    // programador El juego asigna de forma aleatorea esta selección de
+    // Pokemon, además de una selección de movimientos variados
+    // Ambos asignados tanto para el pokemon del usuario, 
+    // como para el pokemon del enemigo
     public static void assignData(){
         List<Pokemon> pkmnCollection = new ArrayList<>();
         pkmnCollection.add(new Pokemon(new Stats(55, 30, 35, 90), "Pikachu", new Stats(new Random().nextInt(16), new Random().nextInt(16), new Random().nextInt(16), new Random().nextInt(16)), random.nextInt(100)+1));

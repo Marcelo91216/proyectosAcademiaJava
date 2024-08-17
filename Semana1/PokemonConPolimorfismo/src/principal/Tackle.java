@@ -3,6 +3,8 @@ package principal;
 import java.util.Random;
 
 public class Tackle implements Move {
+
+    // Ataque de 35 de daño, no tiene efectos secundarios
     @Override
     public void attack(Pokemon src, Pokemon dst){
         Random random = new Random();

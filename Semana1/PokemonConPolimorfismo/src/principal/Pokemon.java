@@ -37,14 +37,17 @@ public class Pokemon extends Species {
         return this.actualHp;
     }
 
+    // Se le asigna la gama de movimientos al pokemon
     public void assignMoves(Move[] newMoves) {
         this.moveset = newMoves;
     }
 
+    // Reduce los puntos de vida del pokemon
     public void reduceHp(int reduce) {
         this.actualHp -= reduce;
     }
 
+    // Establece el estado del pokemon
     public void setState(State state) {
         this.state = state;
     }
@@ -53,6 +56,7 @@ public class Pokemon extends Species {
         return this.state;
     }
     
+    // La inteligencia artificial del enemigo, eligiendo el ataque a realizar contra el enemigo
     public void randomMove(Pokemon enemy){
         Random rand = new Random();
         this.moveset[rand.nextInt(this.moveset.length)].attack(this, enemy);
@@ -64,10 +68,13 @@ public class Pokemon extends Species {
         return this.name;
     }
     
+    // Retorna el conjunto de movimientos
     public Move[] getMoveset(){
         return this.moveset;
     }
     
+    // Detecta si el pokemon sufre del efecto de envenenamiento, quitandole 1/16 parte de su vida
+    // al final de cada turno si es que la padece
     public void isSufferingPoison(){
         if(this.state == State.POISON){
             this.reduceHp((1/16)*this.actualstat.hp);

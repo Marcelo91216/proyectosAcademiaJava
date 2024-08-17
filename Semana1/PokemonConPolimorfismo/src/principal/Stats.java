@@ -1,5 +1,6 @@
 package principal;
 
+// Representa las estadisticas del pokemon, su formato puede variar
 public class Stats {
     public int att, def, hp, spd;
     public Stats(int att, int def, int hp, int spd){

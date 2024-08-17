@@ -4,6 +4,8 @@ import java.util.Random;
 
 public class BodySlam implements Move {
 
+    // Hace daño de 85 al enemigo, además con el efecto secundario
+    // de poder paralizar al enemigo con una probabilidad del 50%
     @Override
     public void attack(Pokemon src, Pokemon dst) {
         Random random = new Random();

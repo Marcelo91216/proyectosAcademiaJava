@@ -3,6 +3,9 @@ package principal;
 import java.util.Random;
 
 public class Pound implements Move {
+
+    // Hace daño al enemigo con una potencia de 40
+    // No tiene efecto secundario
     @Override
     public void attack(Pokemon src, Pokemon dst){
         Random random = new Random();

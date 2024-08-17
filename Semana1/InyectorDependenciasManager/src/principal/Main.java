@@ -17,6 +17,7 @@ public class Main {
         System.out.println("Fin del servicio, Bye bye!");
     }
 
+    // Recibe entradas del usuario, y lo situa en un ciclo sin fin, hasta que el usuario indique terminar
     public static void userIn() {
         do {
             System.out.println("Eliga una de las opciones\n0 -> salir | 2 -> ver tarea asignada | 3 -> realizar tarea | 4 -> hacer nada\n5 -> limpiar inventario | 6 -> ordenar objetos");

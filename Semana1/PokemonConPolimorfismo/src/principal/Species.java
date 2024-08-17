@@ -1,5 +1,6 @@
 package principal;
 
+// Representa la especie pokemon a la que pertenece un pokemon
 public abstract class Species {
 
     protected Stats baseStats;
